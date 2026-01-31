@@ -39,6 +39,10 @@ Before running the tests, ensure you have the following installed:
 - **Node.js** (v16 or higher) - [Download](https://nodejs.org/)
 - **npm** (comes with Node.js)
 
+
+git clone <repository-url> // repo link have inside the IT23857476.txt
+cd ITPM-Assinment-1-IT23857476
+
 ## Installation
 
 ### Step 1: Install Dependencies

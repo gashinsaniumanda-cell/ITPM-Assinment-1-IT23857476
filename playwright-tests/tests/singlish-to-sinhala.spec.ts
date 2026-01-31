@@ -51,8 +51,8 @@ test('Pos_Fun_0002 - Compound Logic', async ({ page }) => {
 });
 
 test('Pos_Fun_0003 - Advice/Imperative', async ({ page }) => {
-  await page.getByPlaceholder('Input Your Singlish Text Here.').fill('oyaa kalin giyaa hindhaa inna epaeyi');
-  await expect(page.locator('div.bg-slate-50').first()).toHaveText('ඔයා කලින් ගියා හින්දා ඉන්න එපැයි');
+  await page.getByPlaceholder('Input Your Singlish Text Here.').fill('oyaa kalin giya hindhaa inna epaeyi');
+  await expect(page.locator('div.bg-slate-50').first()).toHaveText('ඔයා කලින් ගිය හින්දා ඉන්න එපැයි');
 });
 
 test('Pos_Fun_0004 - Mixed Question', async ({ page }) => {
@@ -83,8 +83,8 @@ test('Pos_Fun_0008 - Greeting', async ({ page }) => {
 });
 
 test('Pos_Fun_0009 - Request', async ({ page }) => {
-  await page.getByPlaceholder('Input Your Singlish Text Here.').fill('mata vathura veeduruwak dhenna puluvandha?');
-  await expect(page.locator('div.bg-slate-50').first()).toHaveText('මට වතුර වේඩුරුwඅක් දෙන්න පුලුවන්ද?');
+  await page.getByPlaceholder('Input Your Singlish Text Here.').fill('mata vathura viidhuruvak dhenna puluvandha?');
+  await expect(page.locator('div.bg-slate-50').first()).toHaveText('මට වතුර වීදුරුවක් දෙන්න පුලුවන්ද?');
 });
 
 test('Pos_Fun_0010 - Conditional', async ({ page }) => {
@@ -107,7 +107,7 @@ test('Pos_Fun_0013 - Pain State', async ({ page }) => {
   await expect(page.locator('div.bg-slate-50').first()).toHaveText('මගේ බෙල්ල රිදෙනවා.');
 });
 
-test('Pos_Fun_0014 - Drink Command', async ({ page }) => {
+test('Pos_Fun_0014 - Fruit Command', async ({ page }) => {
   await page.getByPlaceholder('Input Your Singlish Text Here.').fill('paLathuru kanna');
   await expect(page.locator('div.bg-slate-50').first()).toHaveText('පළතුරු කන්න');
 });
@@ -175,14 +175,14 @@ test('Pos_Fun_0025 - Mixed Technical Terms', async ({ page }) => {
 });
 
 test('Pos_Fun_0026 - Long Input', async ({ page }) => {
-  const longInput = 'Mama dhaen town Ekata aava eegamanma Bookshop Ekata yanava poth vagayak ganna...'; 
+  const longInput = 'Mama dhaen town Ekata aavaa eegamanma Bookshop Ekata yanavaa poth vagayak ganna...'; 
   await page.getByPlaceholder('Input Your Singlish Text Here.').fill(longInput);
   await expect(page.locator('div.bg-slate-50').first()).toBeVisible();
 });
 
 test('Pos_Fun_0027 - Simple Need', async ({ page }) => {
-  await page.getByPlaceholder('Input Your Singlish Text Here.').fill('mata koopiekak bonna oonee');
-  await expect(page.locator('div.bg-slate-50').first()).toHaveText('මට කෝපිඑකක් බොන්න ඕනේ');
+  await page.getByPlaceholder('Input Your Singlish Text Here.').fill('mata koopi ekak bonna oonee');
+  await expect(page.locator('div.bg-slate-50').first()).toHaveText('මට කෝපි එකක් බොන්න ඕනේ');
 });
 
 test('Pos_Fun_0028 - Double Statement', async ({ page }) => {
